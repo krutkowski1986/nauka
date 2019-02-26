@@ -1,0 +1,33 @@
+#! /bin/bash
+
+for owoc in jablko banan pomarancza
+do 
+	if [ $owoc = 'banan' ]
+	then
+		echo "BANAN ZNALEZIONY"
+		break;
+	fi
+	echo $owoc;
+done
+
+zmienna="Kamil Rutkowski"
+
+echo -e "Moje imie to: $zmienna $1";
+
+test -d skrypt;
+
+echo $?;
+
+if [ 1 = 2 ]
+then
+	echo "Wartosci sa rowne"
+else 
+	echo "Wartosci sa rozne"
+fi
+
+for plik in {1..10}.txt
+do
+	touch $plik;
+done;
+
+
